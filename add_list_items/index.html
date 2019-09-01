@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style_list_css.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="listitem">
+		<div class="container">
+
+
+			<div class="form-group row">
+				<div class="col-12 col-md-8">
+					<input onblur="after(this.id);" type="text" class="form-control" name="item" placeholder="enter here" id="textbar1">
+				</div>
+				<div class="col-6 col-md-2">
+					<button onclick="edit(this.parentNode.parentNode.firstElementChild.firstElementChild);" class="btn btn-primary" >edit</button>
+				</div>
+				<div class="col-6 col-md-2">
+					<button onclick="delt(this.parentNode.parentNode);" id="nono" class="btn btn-primary">delete</button>
+				</div>
+			</div>
+
+
+
+			<div class="form-group row" id="button-1">
+				<div class="col-12 offset-md-2 col-md-4">
+					<button onclick="addnew();" class="btn btn-dark">Add new item</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+<script src="style_list.js"></script>
+</body>
+</html>
