@@ -25,15 +25,23 @@ function addnew(){
 
 
 	var l=div.children.length;
-	var lastid=div.children[l-2].firstElementChild.firstElementChild.id;
-	l=lastid.length;
-	var s="";
-	for(i=7;i<l;i++)
+	var lnew;
+	if(l>2)
 	{
-		s+=lastid[i];
+		var lastid=div.children[l-2].firstElementChild.firstElementChild.id;
+		l=lastid.length;
+		var s="";
+		for(i=7;i<l;i++)
+		{
+			s+=lastid[i];
+		}
+		lnew=parseInt(s)+1;
+		console.log(lnew);
+
 	}
-	var lnew=parseInt(s)+1;
-	console.log(lnew);
+	else{
+		lnew=1;
+	}
 	newitem2.id="textbar"+lnew.toString();
 	newitem2.placeholder="newitem";
     newitem1.appendChild(newitem2);
