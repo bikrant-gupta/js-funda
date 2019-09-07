@@ -26,7 +26,7 @@ function addnew(){
 
 	var l=div.children.length;
 	var lnew;
-	if(l>2)
+	if(l>=2)
 	{
 		var lastid=div.children[l-2].firstElementChild.firstElementChild.id;
 		l=lastid.length;
